@@ -1,0 +1,45 @@
+name:  ct-notes
+version: '0.0.0.0'
+category: Control
+author: Lukwago Allan
+maintainer: epicallan.al@gmail.com
+copyright: 2019 Lukwago Allan
+license: MIT
+github: epicallan/haskell-playground
+extra-source-files:
+- README.md
+library:
+  source-dirs: src
+  dependencies:
+  - base
+default-extensions:
+  - LambdaCase
+  - DeriveGeneric
+  - FlexibleInstances
+  - FlexibleContexts
+  - ScopedTypeVariables
+  - TypeApplications
+  - MultiParamTypeClasses
+  - RecordWildCards
+  - TypeApplications
+  - TypeFamilies
+  - GADTs
+  - FunctionalDependencies
+  - PolyKinds
+  - DataKinds
+  - RankNTypes
+  - TemplateHaskell
+  - TypeOperators
+  - UndecidableInstances
+  - KindSignatures
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -Wincomplete-uni-patterns
+  - -Wincomplete-record-updates
+  - -Wcompat
+  - -Widentities
+  - -Wredundant-constraints
+  - -fhide-source-paths
+  - -Wpartial-fields

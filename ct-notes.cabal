@@ -1,41 +1,39 @@
-cabal-version:       2.0
-name:                ct-notes
-version:             0.0.0.0
-synopsis:            Category theory study notes
-description:         Category theory study notes
-homepage:            https://github.com/epicallan.al@gmail.com/ct-notes
-bug-reports:         https://github.com/epicallan.al@gmail.com/ct-notes/issues
-license:             MIT
-license-file:        LICENSE
-author:              Lukwago Allan
-maintainer:          epicallan.al@gmail.com
-copyright:           2019 Lukwago Allan
-category:            Control
-build-type:          Simple
-extra-doc-files:     README.md
-                   , CHANGELOG.md
-tested-with:         GHC == 8.6.4
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e1706e8ed97770591bee3aee0dcb2475e3424d3edc1930b1dd540e179cf70a50
+
+name:           ct-notes
+version:        0.0.0.0
+category:       Control
+homepage:       https://github.com/epicallan/haskell-playground#readme
+bug-reports:    https://github.com/epicallan/haskell-playground/issues
+author:         Lukwago Allan
+maintainer:     epicallan.al@gmail.com
+copyright:      2019 Lukwago Allan
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
 
 source-repository head
-  type:                git
-  location:            https://github.com/epicallan.al@gmail.com/ct-notes.git
+  type: git
+  location: https://github.com/epicallan/haskell-playground
 
 library
-  hs-source-dirs:      src
-  exposed-modules:     CtNotes
-                       
-
-  build-depends:       base ^>= 4.12.0.0
-                     
-
-  ghc-options:         -Wall
-                       -Wincomplete-uni-patterns
-                       -Wincomplete-record-updates
-                       -Wcompat
-                       -Widentities
-                       -Wredundant-constraints
-                       -fhide-source-paths
-                       -Wmissing-export-lists
-                       -Wpartial-fields
-
-  default-language:    Haskell2010
+  exposed-modules:
+      CtNotes
+      PartOne.Category.Notes
+  other-modules:
+      Paths_ct_notes
+  hs-source-dirs:
+      src
+  default-extensions: LambdaCase DeriveGeneric FlexibleInstances FlexibleContexts ScopedTypeVariables TypeApplications MultiParamTypeClasses RecordWildCards TypeApplications TypeFamilies GADTs FunctionalDependencies PolyKinds DataKinds RankNTypes TemplateHaskell TypeOperators UndecidableInstances KindSignatures
+  ghc-options: -Wall -Werror -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Widentities -Wredundant-constraints -fhide-source-paths -Wpartial-fields
+  build-depends:
+      base
+  default-language: Haskell2010
