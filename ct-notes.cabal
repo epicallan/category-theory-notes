@@ -1,0 +1,41 @@
+cabal-version:       2.0
+name:                ct-notes
+version:             0.0.0.0
+synopsis:            Category theory study notes
+description:         Category theory study notes
+homepage:            https://github.com/epicallan.al@gmail.com/ct-notes
+bug-reports:         https://github.com/epicallan.al@gmail.com/ct-notes/issues
+license:             MIT
+license-file:        LICENSE
+author:              Lukwago Allan
+maintainer:          epicallan.al@gmail.com
+copyright:           2019 Lukwago Allan
+category:            Control
+build-type:          Simple
+extra-doc-files:     README.md
+                   , CHANGELOG.md
+tested-with:         GHC == 8.6.4
+
+source-repository head
+  type:                git
+  location:            https://github.com/epicallan.al@gmail.com/ct-notes.git
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     CtNotes
+                       
+
+  build-depends:       base ^>= 4.12.0.0
+                     
+
+  ghc-options:         -Wall
+                       -Wincomplete-uni-patterns
+                       -Wincomplete-record-updates
+                       -Wcompat
+                       -Widentities
+                       -Wredundant-constraints
+                       -fhide-source-paths
+                       -Wmissing-export-lists
+                       -Wpartial-fields
+
+  default-language:    Haskell2010
