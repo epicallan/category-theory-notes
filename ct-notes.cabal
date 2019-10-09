@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e1706e8ed97770591bee3aee0dcb2475e3424d3edc1930b1dd540e179cf70a50
+-- hash: c125841016b590e41d3cd9bff104ae0797becb97b621dc2650cbd47e75d731eb
 
 name:           ct-notes
 version:        0.0.0.0
@@ -26,8 +26,11 @@ source-repository head
 
 library
   exposed-modules:
-      CtNotes
+      PartOne.CategoriesGreatAndSmall.Notes
       PartOne.Category.Notes
+      PartOne.KleisliCategories.Notes
+      PartOne.ProductsAndCategories.Notes
+      PartOne.TypesAndFunctions.Notes
   other-modules:
       Paths_ct_notes
   hs-source-dirs:
